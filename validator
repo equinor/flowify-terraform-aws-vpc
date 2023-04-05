@@ -1,0 +1,9 @@
+tgw_id = "default"
+
+# Add AWS Transit GW routes in VPC (if values are empty the module skip creating routes for Transit GW)
+vpc_tgw_destination_cidr    = ["10.0.0.0/24","10.0.1.0/24"]
+vpc_tgw_id                  = ["tgw-test1","tgw-test2"]
+
+  # Add VPC Peering routes in VPC (if values are empty the module skip creating routes for VPC Peering)
+vpc_peering_destination_cidr = ["192.168.3.0/24","192.168.4.0/24"]
+vpc_peering_id               = ["pxc-test3","pxc-test4"]
